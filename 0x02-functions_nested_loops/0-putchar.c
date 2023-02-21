@@ -1,11 +1,9 @@
 #include "main.h"
+
 /**
- * main - main function 
- * _putchar: print the alphabets putchar
- *
+ * main - Print _putchar
  * Return: Always 0
  */
-
 int main(void)
 {
 	_putchar('_');
