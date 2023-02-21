@@ -2,9 +2,9 @@
 /**
  * main - main function 
  * _putchar: print the alphabets putchar
+ *
  * Return: Always 0
  */
-
 
 int main(void)
 {
