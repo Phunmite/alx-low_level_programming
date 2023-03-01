@@ -4,7 +4,7 @@
  * @s1:string
  * @s2:strmp
  * Return:int
- * 
+ * Phunmite
  */
 int _strcmp(char *s1, char *s2)
 {
