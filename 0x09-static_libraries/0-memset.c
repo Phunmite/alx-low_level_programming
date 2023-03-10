@@ -9,12 +9,10 @@
 #include <string.h>
 
 
-int _putchar(char c)
+char *_memset(char *s, char b, unsigned int n)
 
 {
 
-    return putchar(c);
+    return memset(s, b, n);
 
 }
-
-

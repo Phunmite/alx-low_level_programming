@@ -9,12 +9,10 @@
 #include <string.h>
 
 
-int _putchar(char c)
+int _abs(int n)
 
 {
 
-    return putchar(c);
+    return abs(n);
 
 }
-
-
