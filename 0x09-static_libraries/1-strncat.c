@@ -1,18 +1,41 @@
 #include "main.h"
 
-#include <stdio.h>
+/**
+ * lenstr - calculates the lenght of a string
+ *
+ * @str: string whose length is to be calculated
+ *
+ * Return: length of string
+ */
 
-#include <stdlib.h>
+int lenstr(char *str)
+{
+	int i;
 
-#include <ctype.h>
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	return (i);
+}
 
-#include <string.h>
-
+/**
+ * _strncat - concatenates two stringe
+ *
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes that will be concatenated
+ *
+ * Return: resulting string at dest
+ */
 
 char *_strncat(char *dest, char *src, int n)
-
 {
+	int i;
+	int dest_len = lenstr(dest);
 
-    return strncat(dest, src, n);
+	for (i = 0; (i < n && src[i] != '\0'); i++)
+	{
+		dest[dest_len + i] = src[i];
+	}
 
+	return (dest);
 }
